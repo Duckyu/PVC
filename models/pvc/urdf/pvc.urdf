@@ -1,0 +1,1637 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="pvc">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="10.256 -92.1 -4.2005"
+        rpy="0 0 0" />
+      <mass
+        value="1000" />
+      <inertia
+        ixx="166.67"
+        ixy="9.2519E-16"
+        ixz="4.4409E-13"
+        iyy="166.67"
+        iyz="1.5777E-30"
+        izz="166.67" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="main_link">
+    <inertial>
+      <origin
+        xyz="-19.3630057590991 5.90480374452152 47.0529907034405"
+        rpy="0 0 0" />
+      <mass
+        value="3442807.25349707" />
+      <inertia
+        ixx="1157032985.3595"
+        ixy="1659233.67130949"
+        ixz="1000244.29349725"
+        iyy="1279028266.00987"
+        iyz="1985274.54687831"
+        izz="221161978.183764" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/main_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/main_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="main_link"
+    type="fixed">
+    <origin
+      xyz="20.042 -14.504 -1.7998"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="main_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="large_window_1">
+    <inertial>
+      <origin
+        xyz="12.1782120496746 4.75178396310253 15.1892410748826"
+        rpy="0 0 0" />
+      <mass
+        value="126489.683919039" />
+      <inertia
+        ixx="2120463.32696713"
+        ixy="-70277.8488771684"
+        ixz="795610.055889251"
+        iyy="2798844.63863607"
+        iyz="90440.015543835"
+        izz="1321252.76935295" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/large_window_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/large_window_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="large_window_1"
+    type="fixed">
+    <origin
+      xyz="-39.2425769434349 1.34756855883034 5.37955556265205"
+      rpy="0 0 0" />
+    <parent
+      link="main_link" />
+    <child
+      link="large_window_1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="frame_1">
+    <inertial>
+      <origin
+        xyz="2.35219887985317 2.5 3.60219887985318"
+        rpy="0 0 0" />
+      <mass
+        value="67971.7888178389" />
+      <inertia
+        ixx="1434862.22620417"
+        ixy="-58231.8724736295"
+        ixz="536137.570921857"
+        iyy="1854288.58599855"
+        iyz="74299.8724736293"
+        izz="949553.339583414" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/frame_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/frame_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="frame_1"
+    type="fixed">
+    <origin
+      xyz="9.95586404215977 2.25178396310253 11.7168930673677"
+      rpy="0 0 0" />
+    <parent
+      link="large_window_1" />
+    <child
+      link="frame_1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="glass_1">
+    <inertial>
+      <origin
+        xyz="2.0715189994459 2.5 3.3215189994459"
+        rpy="0 0 0" />
+      <mass
+        value="58517.8951012005" />
+      <inertia
+        ixx="685601.100762963"
+        ixy="-12045.976403539"
+        ixz="259472.484967393"
+        iyy="944556.052637522"
+        iyz="16140.1430702057"
+        izz="371699.429769539" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/glass_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/glass_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="glass_1"
+    type="fixed">
+    <origin
+      xyz="9.95586404215977 2.25178396310253 11.7168930673677"
+      rpy="0 0 0" />
+    <parent
+      link="large_window_1" />
+    <child
+      link="glass_1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="large_window_2">
+    <inertial>
+      <origin
+        xyz="-5.89494104181004 3.72865072509259 9.17644210199591"
+        rpy="0 0 0" />
+      <mass
+        value="110789.683919039" />
+      <inertia
+        ixx="1212868.31732363"
+        ixy="-70277.8488771678"
+        ixz="554707.878006564"
+        iyy="1863513.84362992"
+        iyz="70277.8488771679"
+        izz="1212868.31732363" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/large_window_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/large_window_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="large_window_2"
+    type="fixed">
+    <origin
+      xyz="-35.9707379544919 2.3707017968403 68.7090905394307"
+      rpy="0 1.5707963267949 0" />
+    <parent
+      link="main_link" />
+    <child
+      link="large_window_2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="frame_2">
+    <inertial>
+      <origin
+        xyz="2.61903045171209 2.5 2.6190304517121"
+        rpy="0 0 0" />
+      <mass
+        value="60771.7888178388" />
+      <inertia
+        ixx="874625.165139445"
+        ixy="-58231.8724736288"
+        ixz="385628.262069382"
+        iyy="1283395.35048986"
+        iyz="58231.8724736288"
+        izz="874625.165139447" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/frame_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/frame_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="frame_2"
+    type="fixed">
+    <origin
+      xyz="-8.38735809058912 1.22865072509259 6.68402505321685"
+      rpy="0 0 0" />
+    <parent
+      link="large_window_2" />
+    <child
+      link="frame_2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="glass_2">
+    <inertial>
+      <origin
+        xyz="2.33858164708957 2.49999999999999 2.33858164708958"
+        rpy="0 0 0" />
+      <mass
+        value="50017.8951012006" />
+      <inertia
+        ixx="338243.152184186"
+        ixy="-12045.9764035389"
+        ixz="169079.615937182"
+        iyy="580118.493140059"
+        iyz="12045.9764035391"
+        izz="338243.152184186" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/glass_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/glass_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="glass_2"
+    type="fixed">
+    <origin
+      xyz="-8.38735809058912 1.22865072509259 6.68402505321685"
+      rpy="0 0 0" />
+    <parent
+      link="large_window_2" />
+    <child
+      link="glass_2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="large_window_3">
+    <inertial>
+      <origin
+        xyz="-0.503475338180358 0.629579866719466 8.88035172071675"
+        rpy="0 0 0" />
+      <mass
+        value="40668.2320318051" />
+      <inertia
+        ixx="69141.975776826"
+        ixy="-29601.7548732141"
+        ixz="-9.65211802380359E-12"
+        iyy="222737.78221881"
+        iyz="-8.33840920977816E-12"
+        izz="274460.404416952" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/large_window_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/large_window_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="large_window_3"
+    type="fixed">
+    <origin
+      xyz="-18.3867129012751 5.75637759065263 49.2393187761148"
+      rpy="0 1.5707963267949 0" />
+    <parent
+      link="main_link" />
+    <child
+      link="large_window_3" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="frame_3">
+    <inertial>
+      <origin
+        xyz="-6.25930575287884 9.23594842135284 0.0999999999999996"
+        rpy="0 0 0" />
+      <mass
+        value="28503.5220715615" />
+      <inertia
+        ixx="62398.2837521416"
+        ixy="-26736.7717758821"
+        ixz="-1.02057866576654E-11"
+        iyy="192788.167864526"
+        iyz="-9.4244154003967E-12"
+        izz="239794.549698025" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/frame_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/frame_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="frame_3"
+    type="fixed">
+    <origin
+      xyz="5.64287014609501 -8.65702506871975 8.9"
+      rpy="0 0 0" />
+    <parent
+      link="large_window_3" />
+    <child
+      link="frame_3" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="glass_3">
+    <inertial>
+      <origin
+        xyz="-5.88166465588971 9.40529983832208 0.5"
+        rpy="0 0 0" />
+      <mass
+        value="12164.7099602436" />
+      <inertia
+        ixx="6743.6920246844"
+        ixy="-2864.98309733204"
+        ixz="5.53668633861799E-13"
+        iyy="29949.6143542831"
+        iyz="1.087657379027E-12"
+        izz="34665.8547189269" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/glass_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/glass_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="glass_3"
+    type="fixed">
+    <origin
+      xyz="5.64287014609501 -8.65702506871975 8.1"
+      rpy="0 0 0" />
+    <parent
+      link="large_window_3" />
+    <child
+      link="glass_3" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="main">
+    <inertial>
+      <origin
+        xyz="0.143494690048826 -8.60672754712109 0.454621689337197"
+        rpy="0 0 0" />
+      <mass
+        value="2853940.68027188" />
+      <inertia
+        ixx="212816595.033728"
+        ixy="-1793804.76764386"
+        ixz="739256.432199772"
+        iyy="1208377764.087"
+        iyz="-1658732.74571304"
+        izz="1093218497.33095" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/main.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/main.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="main"
+    type="fixed">
+    <origin
+      xyz="-19.2867129012751 -2.90064747806712 47.0964486300198"
+      rpy="0 -1.5707963267949 0" />
+    <parent
+      link="main_link" />
+    <child
+      link="main" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="roof">
+    <inertial>
+      <origin
+        xyz="-41.9611300739514 23.2314476939045 49.2407099495549"
+        rpy="0 0 0" />
+      <mass
+        value="219399.999999999" />
+      <inertia
+        ixx="5687618.0829418"
+        ixy="1151.05361091158"
+        ixz="-20085.6834221403"
+        iyy="65710987.8207085"
+        iyz="-492.386699647628"
+        izz="60133796.8221995" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/roof.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/roof.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="roof"
+    type="fixed">
+    <origin
+      xyz="29.9539970482798 -13.423778939 89.0575790498575"
+      rpy="-1.5707963267949 -1.57079631189374 1.5707963267949" />
+    <parent
+      link="main_link" />
+    <child
+      link="roof" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="roof_main">
+    <inertial>
+      <origin
+        xyz="-29.0260614340081 0.907660753272412 -8.98855647025136"
+        rpy="0 0 0" />
+      <mass
+        value="218687.585620454" />
+      <inertia
+        ixx="5684682.93784561"
+        ixy="1151.05356549428"
+        ixz="-20085.6834150537"
+        iyy="65705002.2236029"
+        iyz="-16.4191500328177"
+        izz="60130587.7024665" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/roof_main.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/roof_main.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="roof_main"
+    type="fixed">
+    <origin
+      xyz="-12.961130087475 22.3231316539074 58.2407099495549"
+      rpy="0 0 0" />
+    <parent
+      link="roof" />
+    <child
+      link="roof_main" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="roof_plate_1">
+    <inertial>
+      <origin
+        xyz="-5.00000000007344 3.91283534919386 0.00499992660343018"
+        rpy="0 0 0" />
+      <mass
+        value="335.414379544736" />
+      <inertia
+        ixx="1878.28528786426"
+        ixy="-2.46375802028015E-11"
+        ixz="-4.57481836942081E-05"
+        iyy="3116.51512465932"
+        iyz="2.83932875401424E-11"
+        izz="4994.79482228392" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/roof_plate_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/roof_plate_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="roof_plate_1"
+    type="fixed">
+    <origin
+      xyz="-28.9611300796019 22.8519298667375 42.2134977972192"
+      rpy="1.40564764938028 0 0" />
+    <parent
+      link="roof" />
+    <child
+      link="roof_plate_1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="roof_plate_2">
+    <inertial>
+      <origin
+        xyz="-5.0000000000734 3.24999999999997 0.00499992660344439"
+        rpy="0 0 0" />
+      <mass
+        value="376.999999999996" />
+      <inertia
+        ixx="1056.85980833333"
+        ixy="1.6018280958341E-13"
+        ixz="-1.948002261764E-07"
+        iyy="13.2766833333331"
+        iyz="1.6016521443628E-11"
+        izz="1070.13020833333" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/roof_plate_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/roof_plate_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="roof_plate_2"
+    type="fixed">
+    <origin
+      xyz="-28.9611300796019 22.8519298667375 42.2134977972192"
+      rpy="1.40564764938028 0 0" />
+    <parent
+      link="roof" />
+    <child
+      link="roof_plate_2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="back_windows">
+    <inertial>
+      <origin
+        xyz="0.251999999999988 -4.12799999999986 -0.400000000000006"
+        rpy="0 0 0" />
+      <mass
+        value="51200.0000000056" />
+      <inertia
+        ixx="21189.9733333415"
+        ixy="-7.58512423242329E-12"
+        ixz="4.29286236188497E-14"
+        iyy="16930.133333334"
+        iyz="3.22610086792984E-13"
+        izz="32658.7733333415" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/back_windows.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/back_windows.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="back_windows"
+    type="fixed">
+    <origin
+      xyz="-28.2867129012751 -2.90064747806779 47.0964486300198"
+      rpy="0 -1.5707963267949 0" />
+    <parent
+      link="main_link" />
+    <child
+      link="back_windows" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="front_windows">
+    <inertial>
+      <origin
+        xyz="6.06249999999992 6.75 0.399999999999983"
+        rpy="0 0 0" />
+      <mass
+        value="32767.9999999999" />
+      <inertia
+        ixx="8738.13333333316"
+        ixy="9.93043140252865E-12"
+        ixz="5.52462238737165E-11"
+        iyy="19879.2533333333"
+        iyz="-2.16151453479672E-13"
+        izz="25122.1333333332" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/front_windows.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/front_windows.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_windows"
+    type="fixed">
+    <origin
+      xyz="-10.2867129012749 -2.90064747806712 47.0964486300198"
+      rpy="0 1.5707963267949 0" />
+    <parent
+      link="main_link" />
+    <child
+      link="front_windows" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="right_door">
+    <inertial>
+      <origin
+        xyz="-1.11022302462516E-16 2.5 0.0750000000000064"
+        rpy="0 0 0" />
+      <mass
+        value="4499.99999999996" />
+      <inertia
+        ixx="9383.43749999991"
+        ixy="-1.66533453693772E-13"
+        ixz="-1.77635683940023E-14"
+        iyy="13508.4374999999"
+        iyz="-7.48972756150585E-31"
+        izz="22874.9999999998" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/right_door.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/right_door.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_door"
+    type="fixed">
+    <origin
+      xyz="-19.2867129012751 -2.90064747806712 16.9464486300198"
+      rpy="0 0 0" />
+    <parent
+      link="main_link" />
+    <child
+      link="right_door" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="front_door">
+    <inertial>
+      <origin
+        xyz="-7.105427357601E-15 2.36164284932063 0.141594156910822"
+        rpy="0 0 0" />
+      <mass
+        value="3050.97335529233" />
+      <inertia
+        ixx="1698.89800839913"
+        ixy="-3.76111205445622E-13"
+        ixz="1.43720413827821E-11"
+        iyy="4100.01347792267"
+        iyz="8.53859777674536"
+        izz="5734.81347792267" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/front_door.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/front_door.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_door"
+    type="fixed">
+    <origin
+      xyz="-9.28671290127497 -2.90064747806712 34.7214486300198"
+      rpy="0 1.5707963267949 0" />
+    <parent
+      link="main_link" />
+    <child
+      link="front_door" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="back_link">
+    <inertial>
+      <origin
+        xyz="-0.158382252579052 -2.86572985993179 9.19041399364423"
+        rpy="0 0 0" />
+      <mass
+        value="59302.6486145417" />
+      <inertia
+        ixx="593746.301186771"
+        ixy="3.11210670515527E-12"
+        ixz="-2.31325838930079E-10"
+        iyy="548027.854843686"
+        iyz="-91124.0461001585"
+        izz="208334.738359049" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/back_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/back_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="back_link"
+    type="fixed">
+    <origin
+      xyz="-29.244 -38.442 0.15773"
+      rpy="1.5708 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="back_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="back_sub_1">
+    <inertial>
+      <origin
+        xyz="2 -2.63565535643514 -1.74281535006084"
+        rpy="0 0 0" />
+      <mass
+        value="54940.1085577796" />
+      <inertia
+        ixx="557180.475742585"
+        ixy="-2.35147068505599E-10"
+        ixz="-1.46111216592133E-11"
+        iyy="202471.672848153"
+        iyz="91124.0461001583"
+        izz="506021.613830942" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/back_sub_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/back_sub_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="back_sub_1"
+    type="fixed">
+    <origin
+      xyz="-2.15838225257905 -4.85818682703273 12"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="back_link" />
+    <child
+      link="back_sub_1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="back_sub_2">
+    <inertial>
+      <origin
+        xyz="-2 -4.6263450144928 5.00000000000001"
+        rpy="0 0 0" />
+      <mass
+        value="4362.54005676206" />
+      <inertia
+        ixx="36565.8254441856"
+        ixy="1.10725371137335E-11"
+        ixz="-5.92118946466865E-13"
+        iyy="42006.241012744"
+        iyz="-1.47507138483634E-10"
+        izz="5863.0655108951" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/back_sub_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/back_sub_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="back_sub_2"
+    type="fixed">
+    <origin
+      xyz="1.84161774742094 -4.34818682703269 12"
+      rpy="3.14159265358979 0 0" />
+    <parent
+      link="back_link" />
+    <child
+      link="back_sub_2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="front_link">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/front_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/front_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_link"
+    type="fixed">
+    <origin
+      xyz="28.0451810814272 -88.8012197270756 -30.1995800884917"
+      rpy="1.5707963267949 0 1.5707963267949" />
+    <parent
+      link="base_link" />
+    <child
+      link="front_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="small_glass">
+    <inertial>
+      <origin
+        xyz="2.5936974789916 3.6 -1.64369747899161"
+        rpy="0 0 0" />
+      <mass
+        value="7616.00000000001" />
+      <inertia
+        ixx="19012.2308123249"
+        ixy="4.29255837224631E-12"
+        ixz="-15847.5025210084"
+        iyy="58586.3282913166"
+        iyz="-5.93913297193751E-12"
+        izz="40386.470812325" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/small_glass.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/small_glass.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="small_glass"
+    type="fixed">
+    <origin
+      xyz="2.20121972707564 25.4991230822634 -6.48955934436527"
+      rpy="0 0 0" />
+    <parent
+      link="front_link" />
+    <child
+      link="small_glass" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="big_glass">
+    <inertial>
+      <origin
+        xyz="-1.9963700234192 2.87587822014051 -2.26932084309133"
+        rpy="0 0 0" />
+      <mass
+        value="27328" />
+      <inertia
+        ixx="37514.6666666667"
+        ixy="-9.97632702803986E-12"
+        ixz="1.20571031347994E-10"
+        iyy="43957.3866666666"
+        iyz="-7.48259358849044E-14"
+        izz="74064.2666666666" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/big_glass.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/big_glass.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="big_glass"
+    type="fixed">
+    <origin
+      xyz="24.7012197270756 25.4991230822634 -6.48955934436535"
+      rpy="0 0 0" />
+    <parent
+      link="front_link" />
+    <child
+      link="big_glass" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="front">
+    <inertial>
+      <origin
+        xyz="1.51702127659574 3.88297872340426 0.299999999999997"
+        rpy="0 0 0" />
+      <mass
+        value="4512" />
+      <inertia
+        ixx="11264.9327659575"
+        ixy="-6133.78723404256"
+        ixz="3.49490423948924E-11"
+        iyy="10202.2127659575"
+        iyz="2.2582290647373E-11"
+        izz="21196.4255319149" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/front.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/front.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front"
+    type="fixed">
+    <origin
+      xyz="11.7012197270756 25.4991230822634 -6.4895593443653"
+      rpy="0 0 0" />
+    <parent
+      link="front_link" />
+    <child
+      link="front" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="sub_front_door">
+    <inertial>
+      <origin
+        xyz="12.4 2.5 0.399999999999956"
+        rpy="0 0 0" />
+      <mass
+        value="14784" />
+      <inertia
+        ixx="24640"
+        ixy="3.40766272795975E-12"
+        ixz="6.43325707790502E-11"
+        iyy="22520.9600000001"
+        iyz="-6.78620839408801E-13"
+        izz="45584" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/sub_front_door.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/sub_front_door.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="sub_front_door"
+    type="fixed">
+    <origin
+      xyz="2.20121972707562 25.4991230822634 -7.48955934436527"
+      rpy="0 0 0" />
+    <parent
+      link="front_link" />
+    <child
+      link="sub_front_door" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="right">
+    <inertial>
+      <origin
+        xyz="0.900000000000002 3.125 0.800000000000004"
+        rpy="0 0 0" />
+      <mass
+        value="900" />
+      <inertia
+        ixx="196.6875"
+        ixy="4.49480470332805E-14"
+        ixz="2.24280684755988E-13"
+        iyy="571.687500000001"
+        iyz="1.11131518195126E-13"
+        izz="384.375000000001" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right"
+    type="fixed">
+    <origin
+      xyz="24.6012197270756 26.4991230822634 -10.5895593443653"
+      rpy="0 1.5707963267949 0" />
+    <parent
+      link="front_link" />
+    <child
+      link="right" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="sub_right_door">
+    <inertial>
+      <origin
+        xyz="0.9 1.5 -0.400000000000006"
+        rpy="0 0 0" />
+      <mass
+        value="4319.99999999998" />
+      <inertia
+        ixx="3470.39999999999"
+        ixy="1.1041834113712E-12"
+        ixz="-7.42517158869708E-14"
+        iyy="1396.79999999999"
+        iyz="-1.91846538655285E-14"
+        izz="4406.39999999998" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/sub_right_door.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/sub_right_door.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="sub_right_door"
+    type="fixed">
+    <origin
+      xyz="23.7012197270756 26.4991230822634 -12.3895593443653"
+      rpy="3.14159265358979 -1.5707963267949 0" />
+    <parent
+      link="front_link" />
+    <child
+      link="sub_right_door" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="sub_main">
+    <inertial>
+      <origin
+        xyz="11.1078129117011 4.65389585347294 -4.93488613399854"
+        rpy="0 0 0" />
+      <mass
+        value="589490.416666667" />
+      <inertia
+        ixx="11870849.9653005"
+        ixy="-658100.789888678"
+        ixz="-409315.709197191"
+        iyy="38041125.7244482"
+        iyz="-454625.261560292"
+        izz="32742513.1008403" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/sub_main.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pvc/meshes/sub_main.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="sub_main"
+    type="fixed">
+    <origin
+      xyz="2.20121972707564 25.4991230822634 -6.48955934436527"
+      rpy="0 0 0" />
+    <parent
+      link="front_link" />
+    <child
+      link="sub_main" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
