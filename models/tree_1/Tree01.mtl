@@ -10,6 +10,10 @@ newmtl wire_204204204
 	Ka 0.8000 0.8000 0.8000
 	Kd 0.8000 0.8000 0.8000
 	Ks 0.3500 0.3500 0.3500
+	map_Bump Textures/Sample_Bark_2_Normal.jpg
+	map_Kd Textures/Sample_Bark_2.jpg
+	map_Ns Textures/Sample_Bark_2_Gloss.jpg
+	map_d Textures/Sample_Bark_2_AO.jpg
 
 newmtl wire_020020020
 	Ns 32
@@ -20,3 +24,6 @@ newmtl wire_020020020
 	Ka 0.0784 0.0784 0.0784
 	Kd 0.0784 0.0784 0.0784
 	Ks 0.3500 0.3500 0.3500
+	map_Bump Textures/Fall_Leaf_front_Normal.jpg
+	map_Kd Textures/Fall_Leaf_front_v2.jpg
+	disp Textures/Fall_Leaf_front_Opacity.jpg
